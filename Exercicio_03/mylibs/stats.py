@@ -1,4 +1,5 @@
 import numpy as np
+import math
 
 def mean(x):
     return (np.sum(x)/len(x))
@@ -11,4 +12,7 @@ def var(y):
         soma += ((item - media)**2)
     var = soma/len(y)
     return var;
+
+def stdev(x):
+    return math.sqrt(var(x))
     
